@@ -1,0 +1,139 @@
+{
+    "id": "course_elpac_001",
+    "title": "ELPAC Training",
+    "slug": "elpac-training",
+    "description": "Complete preparation course for ICAO ELPAC certification, covering Papers 1 and 2.",
+    "language": "en",
+    "category": "ATC",
+    "introMedia": {
+      "type": "video",
+      "url": "https://cdn.example.com/media/elpac-intro.mp4"
+    },
+    "version": "1.0.0",
+    "isPublished": true,
+    "modules": [
+      {
+        "id": "module_paper1",
+        "title": "Paper 1 - Computer Based Test",
+        "moduleType": "core",
+        "description": "CBT exam focused on listening and comprehension.",
+        "units": [
+          {
+            "id": "unit_part1",
+            "title": "Part 1 - General Listening",
+            "contentBlocks": [
+              {
+                "type": "video",
+                "content": {
+                  "url": "https://cdn.example.com/videos/elpac_p1_part1.mp4"
+                },
+                "order": 1
+              }
+            ],
+            "practice": {
+              "id": "practice_elpac_p1_part1",
+              "title": "Practice - Part 1",
+              "description": "Practice general listening with MCQs.",
+              "activities": [
+                {
+                  "type": "mcq",
+                  "prompt": "What is the ATC instruction given?",
+                  "media": {
+                    "url": "https://cdn.example.com/audio/instruction1.mp3"
+                  },
+                  "options": ["Descend to FL90", "Climb to FL90", "Maintain FL90"],
+                  "correctAnswer": "Descend to FL90",
+                  "feedback": "Listen again and identify the verb 'descend'."
+                }
+              ]
+            }
+          },
+          {
+            "id": "unit_part2",
+            "title": "Part 2 - Emergency Listening",
+            "contentBlocks": [
+              {
+                "type": "video",
+                "content": {
+                  "url": "https://cdn.example.com/videos/elpac_p1_part2.mp4"
+                },
+                "order": 1
+              }
+            ],
+            "practice": null
+          }
+        ]
+      },
+      {
+        "id": "module_paper2",
+        "title": "Paper 2 - Oral Interaction",
+        "moduleType": "oral",
+        "description": "Oral interview with tasks based on aviation scenarios.",
+        "units": [
+          {
+            "id": "unit_task1a",
+            "title": "Task 1A - Situation Response",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": {
+                  "html": "<p>In this task, you'll respond to unexpected situations.</p>"
+                },
+                "order": 1
+              }
+            ],
+            "practice": {
+              "id": "practice_task1a",
+              "title": "Practice - Task 1A",
+              "description": "Simulate emergency responses.",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "A bird strike just occurred. Report the situation to ATC.",
+                  "media": null,
+                  "feedback": "Ensure you include aircraft status, intentions, and request support."
+                }
+              ]
+            }
+          },
+          {
+            "id": "unit_task3_simulation",
+            "title": "Task 3 - Full Simulation",
+            "contentBlocks": [
+              {
+                "type": "video",
+                "content": {
+                  "url": "https://cdn.example.com/videos/elpac_task3_intro.mp4"
+                },
+                "order": 1
+              }
+            ],
+            "simulation": {
+              "id": "sim_elpac_task3",
+              "title": "ELPAC Final Simulation",
+              "description": "Complete oral simulation under timed conditions.",
+              "videoIntro": "https://cdn.example.com/videos/elpac_sim_intro.mp4",
+              "steps": [
+                {
+                  "prompt": "Brief ATC about your delayed departure due to weather.",
+                  "inputType": "audio",
+                  "validationLogic": {
+                    "expectedKeywords": ["weather", "delay", "ETA"],
+                    "minLengthSec": 10
+                  }
+                },
+                {
+                  "prompt": "Respond to an unexpected runway incursion.",
+                  "inputType": "audio",
+                  "validationLogic": {
+                    "expectedKeywords": ["runway", "stop", "emergency"],
+                    "minLengthSec": 12
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
