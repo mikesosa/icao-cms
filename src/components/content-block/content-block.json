@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_content_block_content_block",
+  "info": {
+    "displayName": "Content Block",
+    "description": "A block of content that can be text, video, image, or audio"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "video",
+        "image",
+        "audio"
+      ],
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    }
+  }
+} 

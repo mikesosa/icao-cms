@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_simulation_step_simulation_step",
+  "info": {
+    "displayName": "Simulation Step",
+    "description": "A step in an interactive simulation"
+  },
+  "options": {},
+  "attributes": {
+    "prompt": {
+      "type": "richtext",
+      "required": true
+    },
+    "inputType": {
+      "type": "enumeration",
+      "enum": [
+        "audio",
+        "text",
+        "mcq"
+      ],
+      "required": true
+    },
+    "validationLogic": {
+      "type": "json",
+      "required": false
+    }
+  }
+} 

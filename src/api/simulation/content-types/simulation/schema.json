@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "simulations",
+  "info": {
+    "singularName": "simulation",
+    "pluralName": "simulations",
+    "displayName": "Simulation",
+    "description": "An interactive simulation with multiple steps"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "videoIntro": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "simulation-step.simulation-step"
+    }
+  }
+} 

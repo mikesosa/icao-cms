@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "practice_sets",
+  "info": {
+    "singularName": "practice-set",
+    "pluralName": "practice-sets",
+    "displayName": "Practice Set",
+    "description": "A set of practice activities"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "activities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "activity.activity"
+    }
+  }
+} 

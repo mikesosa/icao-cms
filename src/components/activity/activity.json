@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_activity_activity",
+  "info": {
+    "displayName": "Activity",
+    "description": "A learning activity with various types of interactions"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "mcq",
+        "audio_input",
+        "text_input"
+      ],
+      "required": true
+    },
+    "prompt": {
+      "type": "richtext",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "audios"
+      ]
+    },
+    "options": {
+      "type": "json",
+      "required": false
+    },
+    "correctAnswer": {
+      "type": "json",
+      "required": true
+    },
+    "feedback": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+} 

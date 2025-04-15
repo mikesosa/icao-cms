@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_unit_unit",
+  "info": {
+    "displayName": "Unit",
+    "description": "A unit containing content blocks and optional practice/simulation"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "contentBlocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content-block.content-block"
+    },
+    "practice": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::practice-set.practice-set"
+    },
+    "simulation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::simulation.simulation"
+    }
+  }
+} 
