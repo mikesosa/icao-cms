@@ -1,0 +1,269 @@
+{
+  "version": "1.0",
+  "contentTypes": {
+    "course": {
+      "kind": "collectionType",
+      "collectionName": "courses",
+      "info": {
+        "singularName": "course",
+        "pluralName": "courses",
+        "displayName": "Course",
+        "description": "A course containing modules and learning content"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "attributes": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "title"
+        },
+        "description": {
+          "type": "richtext",
+          "required": true
+        },
+        "language": {
+          "type": "enumeration",
+          "enum": ["en", "es"],
+          "required": true
+        },
+        "category": {
+          "type": "string",
+          "required": true
+        },
+        "introMedia": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": ["images", "videos"]
+        },
+        "modules": {
+          "type": "component",
+          "repeatable": true,
+          "component": "module.module"
+        },
+        "isPublished": {
+          "type": "boolean",
+          "default": false
+        },
+        "version": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "practice-set": {
+      "kind": "collectionType",
+      "collectionName": "practice_sets",
+      "info": {
+        "singularName": "practice-set",
+        "pluralName": "practice-sets",
+        "displayName": "Practice Set",
+        "description": "A set of practice activities"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "attributes": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "richtext",
+          "required": true
+        },
+        "activities": {
+          "type": "component",
+          "repeatable": true,
+          "component": "activity.activity"
+        }
+      }
+    },
+    "simulation": {
+      "kind": "collectionType",
+      "collectionName": "simulations",
+      "info": {
+        "singularName": "simulation",
+        "pluralName": "simulations",
+        "displayName": "Simulation",
+        "description": "An interactive simulation with multiple steps"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "attributes": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "richtext",
+          "required": true
+        },
+        "videoIntro": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": ["videos"]
+        },
+        "steps": {
+          "type": "component",
+          "repeatable": true,
+          "component": "simulation-step.simulation-step"
+        }
+      }
+    }
+  },
+  "components": {
+    "module": {
+      "collectionName": "components_module_module",
+      "info": {
+        "displayName": "Module",
+        "description": "A module containing units and learning content"
+      },
+      "options": {},
+      "attributes": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "richtext"
+        },
+        "moduleType": {
+          "type": "enumeration",
+          "enum": ["core", "oral", "sim"],
+          "required": true
+        },
+        "units": {
+          "type": "component",
+          "repeatable": true,
+          "component": "unit.unit"
+        }
+      }
+    },
+    "unit": {
+      "collectionName": "components_unit_unit",
+      "info": {
+        "displayName": "Unit",
+        "description": "A unit containing content blocks and optional practice/simulation"
+      },
+      "options": {},
+      "attributes": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "contentBlocks": {
+          "type": "component",
+          "repeatable": true,
+          "component": "content-block.content-block"
+        },
+        "practice": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::practice-set.practice-set"
+        },
+        "simulation": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::simulation.simulation"
+        }
+      }
+    },
+    "content-block": {
+      "collectionName": "components_content_block_content_block",
+      "info": {
+        "displayName": "Content Block",
+        "description": "A block of content that can be text, video, image, or audio"
+      },
+      "options": {},
+      "attributes": {
+        "type": {
+          "type": "enumeration",
+          "enum": ["text", "video", "image", "audio"],
+          "required": true
+        },
+        "content": {
+          "type": "richtext",
+          "required": true
+        },
+        "media": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": ["images", "videos", "audios"]
+        },
+        "order": {
+          "type": "integer",
+          "required": true
+        }
+      }
+    },
+    "activity": {
+      "collectionName": "components_activity_activity",
+      "info": {
+        "displayName": "Activity",
+        "description": "A learning activity with various types of interactions"
+      },
+      "options": {},
+      "attributes": {
+        "type": {
+          "type": "enumeration",
+          "enum": ["mcq", "audio_input", "text_input"],
+          "required": true
+        },
+        "prompt": {
+          "type": "richtext",
+          "required": true
+        },
+        "media": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": ["images", "audios"]
+        },
+        "options": {
+          "type": "json",
+          "required": false
+        },
+        "correctAnswer": {
+          "type": "json",
+          "required": true
+        },
+        "feedback": {
+          "type": "richtext",
+          "required": true
+        }
+      }
+    },
+    "simulation-step": {
+      "collectionName": "components_simulation_step_simulation_step",
+      "info": {
+        "displayName": "Simulation Step",
+        "description": "A step in an interactive simulation"
+      },
+      "options": {},
+      "attributes": {
+        "prompt": {
+          "type": "richtext",
+          "required": true
+        },
+        "inputType": {
+          "type": "enumeration",
+          "enum": ["audio", "text", "mcq"],
+          "required": true
+        },
+        "validationLogic": {
+          "type": "json",
+          "required": false
+        }
+      }
+    }
+  }
+} 
