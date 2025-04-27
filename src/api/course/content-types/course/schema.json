@@ -40,6 +40,14 @@
       "required": true,
       "pluginOptions": {}
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "introMedia": {
       "type": "media",
       "multiple": false,
