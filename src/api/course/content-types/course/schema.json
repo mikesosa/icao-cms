@@ -64,11 +64,6 @@
       "component": "module.module",
       "pluginOptions": {}
     },
-    "isPublished": {
-      "type": "boolean",
-      "default": false,
-      "pluginOptions": {}
-    },
     "version": {
       "type": "string",
       "required": true,
