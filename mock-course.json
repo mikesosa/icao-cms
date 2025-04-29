@@ -1,387 +1,566 @@
-{
-  "id": "course_elpac_001",
-  "title": "ELPAC Training",
-  "slug": "elpac-training",
-  "description": "Complete preparation course for ICAO ELPAC certification, covering Papers 1 and 2.",
-  "language": "en",
-  "category": "ATC",
-  "image": {
-    "id": 1,
-    "name": "elpac.png",
-    "alternativeText": "ELPAC Training Course Cover",
-    "caption": "Professional ATC training environment",
-    "width": 1920,
-    "height": 1080,
-    "formats": {
-      "thumbnail": {
-        "name": "thumbnail_elpac.png",
-        "hash": "thumbnail_elpac_course_cover_123abc",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "width": 245,
-        "height": 138,
-        "size": 12.34,
-        "url": "https://cdn.example.com/media/thumbnail_elpac_course_cover.jpg"
-      },
-      "medium": {
-        "name": "medium_elpac.png",
-        "hash": "medium_elpac_course_cover_123abc",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "width": 750,
-        "height": 422,
-        "size": 45.67,
-        "url": "https://cdn.example.com/media/medium_elpac_course_cover.jpg"
-      },
-      "large": {
-        "name": "large_elpac.png",
-        "hash": "large_elpac_course_cover_123abc",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "width": 1000,
-        "height": 563,
-        "size": 78.9,
-        "url": "https://cdn.example.com/media/large_elpac_course_cover.jpg"
-      }
-    },
-    "hash": "elpac_course_cover_123abc",
-    "ext": ".jpg",
-    "mime": "image/jpeg",
-    "size": 234.56,
-    "url": "https://cdn.example.com/media/elpac_course_cover.jpg",
-    "previewUrl": null,
-    "provider": "local",
-    "provider_metadata": null,
-    "createdAt": "2024-04-15T14:30:00.000Z",
-    "updatedAt": "2024-04-15T14:30:00.000Z"
-  },
-  "introMedia": {
-    "type": "video",
-    "url": "https://cdn.example.com/media/elpac-intro.mp4"
-  },
-  "version": "1.0.0",
-  "modules": [
-    {
-      "title": "Paper 1 - Computer Based Test",
-      "moduleType": "core",
-      "description": "CBT exam focused on listening and comprehension.",
-      "units": [
-        {
-          "title": "Part 1 - General Listening",
-          "contentBlocks": [
-            {
-              "type": "text",
-              "content": "test",
-              "order": 1
-            },
-            {
-              "type": "video",
-              "content": "https://cdn.example.com/videos/general-listening-intro.mp4",
-              "order": 2
-            },
-            {
-              "type": "text",
-              "content": "Key concepts for general listening in ATC communications",
-              "order": 3
-            }
-          ],
-          "practice": {
-            "title": "Practice - Part 1",
-            "description": "Practice general listening with MCQs.",
-            "activities": [
-              {
-                "type": "mcq",
-                "prompt": "What is the ATC instruction given?",
-                "media": {
-                  "url": "https://cdn.example.com/audio/instruction1.mp3"
-                },
-                "options": [
-                  "Descend to FL90",
-                  "Climb to FL90",
-                  "Maintain FL90"
-                ],
-                "correctAnswer": "Descend to FL90",
-                "feedback": "Listen again and identify the verb 'descend'."
-              },
-              {
-                "type": "mcq",
-                "prompt": "What weather condition was reported?",
-                "media": {
-                  "url": "https://cdn.example.com/audio/weather-report1.mp3"
-                },
-                "options": [
-                  "Heavy rain and thunderstorms",
-                  "Light turbulence and clear skies",
-                  "Strong crosswinds and low visibility"
-                ],
-                "correctAnswer": "Strong crosswinds and low visibility",
-                "feedback": "Pay attention to wind direction and visibility reports."
-              },
-              {
-                "type": "mcq",
-                "prompt": "What was the assigned parking gate?",
-                "media": {
-                  "url": "https://cdn.example.com/audio/parking-instruction.mp3"
-                },
-                "options": ["Gate A15", "Gate B15", "Gate C15"],
-                "correctAnswer": "Gate B15",
-                "feedback": "Listen carefully for the gate letter and number combination."
-              }
-            ]
-          }
+[
+  {
+    "id": "course_elpac_001",
+    "title": "ELPAC Training",
+    "slug": "elpac-training",
+    "description": "Complete preparation course for ICAO ELPAC certification, covering Papers 1 and 2.",
+    "language": "en",
+    "category": "ATC",
+    "image": {
+      "id": 1,
+      "name": "elpac.png",
+      "alternativeText": "ELPAC Training Course Cover",
+      "caption": "Professional ATC training environment",
+      "width": 1920,
+      "height": 1080,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_elpac.png",
+          "hash": "thumbnail_elpac_course_cover_123abc",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 245,
+          "height": 138,
+          "size": 12.34,
+          "url": "https://cdn.example.com/media/thumbnail_elpac_course_cover.jpg"
         },
-        {
-          "title": "Part 2 - Emergency Listening",
-          "contentBlocks": [
-            {
-              "type": "video",
-              "content": "https://cdn.example.com/videos/emergency-scenarios.mp4",
-              "order": 1
-            },
-            {
-              "type": "text",
-              "content": "Understanding emergency protocols and procedures",
-              "order": 2
-            },
-            {
-              "type": "audio",
-              "content": "https://cdn.example.com/audio/emergency-calls-examples.mp3",
-              "order": 3
-            }
-          ],
-          "practice": {
-            "title": "Emergency Scenarios Practice",
-            "description": "Practice handling various emergency situations",
-            "activities": [
-              {
-                "type": "audio_input",
-                "prompt": "Aircraft reports engine failure. Provide appropriate instructions.",
-                "media": {
-                  "url": "https://cdn.example.com/audio/engine-failure-scenario.mp3"
-                },
-                "feedback": "Remember to prioritize safety and provide clear, concise instructions."
-              },
-              {
-                "type": "mcq",
-                "prompt": "What is the correct emergency frequency?",
-                "media": null,
-                "options": ["121.5 MHz", "243.0 MHz", "Both A and B"],
-                "correctAnswer": "Both A and B",
-                "feedback": "Both frequencies are international emergency frequencies."
-              }
-            ]
-          }
+        "medium": {
+          "name": "medium_elpac.png",
+          "hash": "medium_elpac_course_cover_123abc",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 750,
+          "height": 422,
+          "size": 45.67,
+          "url": "https://cdn.example.com/media/medium_elpac_course_cover.jpg"
+        },
+        "large": {
+          "name": "large_elpac.png",
+          "hash": "large_elpac_course_cover_123abc",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 1000,
+          "height": 563,
+          "size": 78.9,
+          "url": "https://cdn.example.com/media/large_elpac_course_cover.jpg"
         }
-      ]
+      },
+      "hash": "elpac_course_cover_123abc",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 234.56,
+      "url": "https://cdn.example.com/media/elpac_course_cover.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2024-04-15T14:30:00.000Z",
+      "updatedAt": "2024-04-15T14:30:00.000Z"
     },
-    {
-      "title": "Paper 2 - Oral Interaction",
-      "moduleType": "oral",
-      "description": "Oral interview with tasks based on aviation scenarios.",
-      "units": [
-        {
-          "title": "Task 1A - Situation Response",
-          "contentBlocks": [
-            {
-              "type": "text",
-              "content": "<p>In this task, you'll respond to unexpected situations.</p>",
-              "order": 1
-            },
-            {
-              "type": "video",
-              "content": "https://cdn.example.com/videos/situation-response-tutorial.mp4",
-              "order": 2
-            }
-          ],
-          "practice": {
-            "title": "Practice - Task 1A",
-            "description": "Simulate emergency responses.",
-            "activities": [
+    "introMedia": {
+      "type": "video",
+      "url": "https://cdn.example.com/media/elpac-intro.mp4"
+    },
+    "version": "1.0.0",
+    "modules": [
+      {
+        "title": "Paper 1 - Computer Based Test",
+        "moduleType": "core",
+        "description": "CBT exam focused on listening and comprehension.",
+        "units": [
+          {
+            "title": "Part 1 - General Listening",
+            "contentBlocks": [
               {
-                "type": "audio_input",
-                "prompt": "A bird strike just occurred. Report the situation to ATC.",
-                "media": null,
-                "feedback": "Ensure you include aircraft status, intentions, and request support."
+                "type": "text",
+                "content": "test",
+                "order": 1
               },
               {
-                "type": "audio_input",
-                "prompt": "Report severe turbulence encountered during climb.",
-                "media": null,
-                "feedback": "Include altitude, intensity, and any requests for level change."
+                "type": "video",
+                "content": "https://cdn.example.com/videos/general-listening-intro.mp4",
+                "order": 2
+              },
+              {
+                "type": "text",
+                "content": "Key concepts for general listening in ATC communications",
+                "order": 3
               }
-            ]
-          }
-        },
-        {
-          "title": "Task 1B - Standard Phraseology",
-          "contentBlocks": [
-            {
-              "type": "text",
-              "content": "Master standard ICAO phraseology for routine communications",
-              "order": 1
-            },
-            {
-              "type": "audio",
-              "content": "https://cdn.example.com/audio/standard-phraseology-examples.mp3",
-              "order": 2
-            }
-          ],
-          "practice": {
-            "title": "Standard Phraseology Drills",
-            "description": "Practice using correct standard phraseology",
-            "activities": [
-              {
-                "type": "audio_input",
-                "prompt": "Issue departure clearance using standard phraseology",
-                "media": null,
-                "feedback": "Remember to include all necessary elements in the correct order."
-              },
-              {
-                "type": "mcq",
-                "prompt": "Select the correct standard phrase for speed restriction",
-                "options": [
-                  "Maintain maximum speed",
-                  "Maintain present speed",
-                  "Continue at current speed"
-                ],
-                "correctAnswer": "Maintain present speed",
-                "feedback": "This is the standard ICAO phraseology for speed maintenance."
-              }
-            ]
-          }
-        },
-        {
-          "title": "Task 2 - Complex Scenarios",
-          "contentBlocks": [
-            {
-              "type": "text",
-              "content": "Handle multiple aircraft and complex traffic situations",
-              "order": 1
-            },
-            {
-              "type": "video",
-              "content": "https://cdn.example.com/videos/complex-scenarios.mp4",
-              "order": 2
-            }
-          ],
-          "practice": {
-            "title": "Complex Traffic Management",
-            "description": "Practice handling multiple aircraft in challenging situations",
-            "activities": [
-              {
-                "type": "audio_input",
-                "prompt": "Manage approach sequence for three aircraft in poor weather",
-                "media": null,
-                "feedback": "Consider separation, weather impact, and sequence optimization."
-              }
-            ]
-          }
-        },
-        {
-          "title": "Task 3 - Full Simulation",
-          "contentBlocks": [
-            {
-              "type": "video",
-              "content": "https://cdn.example.com/videos/full-simulation-briefing.mp4",
-              "order": 1
-            },
-            {
-              "type": "text",
-              "content": "Final assessment preparation and guidelines",
-              "order": 2
-            }
-          ],
-          "simulation": {
-            "title": "ELPAC Final Simulation",
-            "description": "Complete oral simulation under timed conditions.",
-            "videoIntro": "https://cdn.example.com/videos/elpac_sim_intro.mp4",
-            "steps": [
-              {
-                "prompt": "Brief ATC about your delayed departure due to weather.",
-                "inputType": "audio",
-                "validationLogic": {
-                  "expectedKeywords": ["weather", "delay", "ETA"],
-                  "minLengthSec": 10
-                }
-              },
-              {
-                "prompt": "Respond to an unexpected runway incursion.",
-                "inputType": "audio",
-                "validationLogic": {
-                  "expectedKeywords": ["runway", "stop", "emergency"],
-                  "minLengthSec": 12
-                }
-              },
-              {
-                "prompt": "Handle simultaneous emergency and routine traffic.",
-                "inputType": "audio",
-                "validationLogic": {
-                  "expectedKeywords": ["priority", "standby", "emergency"],
-                  "minLengthSec": 15
-                }
-              },
-              {
-                "prompt": "Coordinate complex approach sequence in degraded radar conditions.",
-                "inputType": "audio",
-                "validationLogic": {
-                  "expectedKeywords": [
-                    "sequence",
-                    "spacing",
-                    "report",
-                    "position"
+            ],
+            "practice": {
+              "title": "Practice - Part 1",
+              "description": "Practice general listening with MCQs.",
+              "activities": [
+                {
+                  "type": "mcq",
+                  "prompt": "What is the ATC instruction given?",
+                  "media": {
+                    "url": "https://cdn.example.com/audio/instruction1.mp3"
+                  },
+                  "options": [
+                    "Descend to FL90",
+                    "Climb to FL90",
+                    "Maintain FL90"
                   ],
-                  "minLengthSec": 20
+                  "correctAnswer": "Descend to FL90",
+                  "feedback": "Listen again and identify the verb 'descend'."
+                },
+                {
+                  "type": "mcq",
+                  "prompt": "What weather condition was reported?",
+                  "media": {
+                    "url": "https://cdn.example.com/audio/weather-report1.mp3"
+                  },
+                  "options": [
+                    "Heavy rain and thunderstorms",
+                    "Light turbulence and clear skies",
+                    "Strong crosswinds and low visibility"
+                  ],
+                  "correctAnswer": "Strong crosswinds and low visibility",
+                  "feedback": "Pay attention to wind direction and visibility reports."
+                },
+                {
+                  "type": "mcq",
+                  "prompt": "What was the assigned parking gate?",
+                  "media": {
+                    "url": "https://cdn.example.com/audio/parking-instruction.mp3"
+                  },
+                  "options": ["Gate A15", "Gate B15", "Gate C15"],
+                  "correctAnswer": "Gate B15",
+                  "feedback": "Listen carefully for the gate letter and number combination."
                 }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "title": "Paper 3 - Radiotelephony Skills",
-      "moduleType": "oral",
-      "description": "Advanced radiotelephony practice with real-world scenarios.",
-      "units": [
-        {
-          "title": "Radio Communication Basics",
-          "contentBlocks": [
-            {
-              "type": "text",
-              "content": "Fundamental principles of clear radio communication",
-              "order": 1
-            },
-            {
-              "type": "audio",
-              "content": "https://cdn.example.com/audio/radio-basics.mp3",
-              "order": 2
+              ]
             }
-          ],
-          "practice": {
-            "title": "Radio Communication Exercises",
-            "description": "Basic radio communication practice",
-            "activities": [
+          },
+          {
+            "title": "Part 2 - Emergency Listening",
+            "contentBlocks": [
               {
-                "type": "audio_input",
-                "prompt": "Practice proper radio call sign usage",
-                "media": null,
-                "feedback": "Remember to use complete call signs in initial contact."
+                "type": "video",
+                "content": "https://cdn.example.com/videos/emergency-scenarios.mp4",
+                "order": 1
               },
               {
-                "type": "mcq",
-                "prompt": "Select the correct readback format",
-                "options": [
-                  "Partial readback with acknowledgment",
-                  "Complete readback with call sign",
-                  "Acknowledgment only"
-                ],
-                "correctAnswer": "Complete readback with call sign",
-                "feedback": "Always provide complete readback for ATC clearances."
+                "type": "text",
+                "content": "Understanding emergency protocols and procedures",
+                "order": 2
+              },
+              {
+                "type": "audio",
+                "content": "https://cdn.example.com/audio/emergency-calls-examples.mp3",
+                "order": 3
               }
-            ]
+            ],
+            "practice": {
+              "title": "Emergency Scenarios Practice",
+              "description": "Practice handling various emergency situations",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "Aircraft reports engine failure. Provide appropriate instructions.",
+                  "media": {
+                    "url": "https://cdn.example.com/audio/engine-failure-scenario.mp3"
+                  },
+                  "feedback": "Remember to prioritize safety and provide clear, concise instructions."
+                },
+                {
+                  "type": "mcq",
+                  "prompt": "What is the correct emergency frequency?",
+                  "media": null,
+                  "options": ["121.5 MHz", "243.0 MHz", "Both A and B"],
+                  "correctAnswer": "Both A and B",
+                  "feedback": "Both frequencies are international emergency frequencies."
+                }
+              ]
+            }
           }
+        ]
+      },
+      {
+        "title": "Paper 2 - Oral Interaction",
+        "moduleType": "oral",
+        "description": "Oral interview with tasks based on aviation scenarios.",
+        "units": [
+          {
+            "title": "Task 1A - Situation Response",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": "<p>In this task, you'll respond to unexpected situations.</p>",
+                "order": 1
+              },
+              {
+                "type": "video",
+                "content": "https://cdn.example.com/videos/situation-response-tutorial.mp4",
+                "order": 2
+              }
+            ],
+            "practice": {
+              "title": "Practice - Task 1A",
+              "description": "Simulate emergency responses.",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "A bird strike just occurred. Report the situation to ATC.",
+                  "media": null,
+                  "feedback": "Ensure you include aircraft status, intentions, and request support."
+                },
+                {
+                  "type": "audio_input",
+                  "prompt": "Report severe turbulence encountered during climb.",
+                  "media": null,
+                  "feedback": "Include altitude, intensity, and any requests for level change."
+                }
+              ]
+            }
+          },
+          {
+            "title": "Task 1B - Standard Phraseology",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": "Master standard ICAO phraseology for routine communications",
+                "order": 1
+              },
+              {
+                "type": "audio",
+                "content": "https://cdn.example.com/audio/standard-phraseology-examples.mp3",
+                "order": 2
+              }
+            ],
+            "practice": {
+              "title": "Standard Phraseology Drills",
+              "description": "Practice using correct standard phraseology",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "Issue departure clearance using standard phraseology",
+                  "media": null,
+                  "feedback": "Remember to include all necessary elements in the correct order."
+                },
+                {
+                  "type": "mcq",
+                  "prompt": "Select the correct standard phrase for speed restriction",
+                  "options": [
+                    "Maintain maximum speed",
+                    "Maintain present speed",
+                    "Continue at current speed"
+                  ],
+                  "correctAnswer": "Maintain present speed",
+                  "feedback": "This is the standard ICAO phraseology for speed maintenance."
+                }
+              ]
+            }
+          },
+          {
+            "title": "Task 2 - Complex Scenarios",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": "Handle multiple aircraft and complex traffic situations",
+                "order": 1
+              },
+              {
+                "type": "video",
+                "content": "https://cdn.example.com/videos/complex-scenarios.mp4",
+                "order": 2
+              }
+            ],
+            "practice": {
+              "title": "Complex Traffic Management",
+              "description": "Practice handling multiple aircraft in challenging situations",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "Manage approach sequence for three aircraft in poor weather",
+                  "media": null,
+                  "feedback": "Consider separation, weather impact, and sequence optimization."
+                }
+              ]
+            }
+          },
+          {
+            "title": "Task 3 - Full Simulation",
+            "contentBlocks": [
+              {
+                "type": "video",
+                "content": "https://cdn.example.com/videos/full-simulation-briefing.mp4",
+                "order": 1
+              },
+              {
+                "type": "text",
+                "content": "Final assessment preparation and guidelines",
+                "order": 2
+              }
+            ],
+            "simulation": {
+              "title": "ELPAC Final Simulation",
+              "description": "Complete oral simulation under timed conditions.",
+              "videoIntro": "https://cdn.example.com/videos/elpac_sim_intro.mp4",
+              "steps": [
+                {
+                  "prompt": "Brief ATC about your delayed departure due to weather.",
+                  "inputType": "audio",
+                  "validationLogic": {
+                    "expectedKeywords": ["weather", "delay", "ETA"],
+                    "minLengthSec": 10
+                  }
+                },
+                {
+                  "prompt": "Respond to an unexpected runway incursion.",
+                  "inputType": "audio",
+                  "validationLogic": {
+                    "expectedKeywords": ["runway", "stop", "emergency"],
+                    "minLengthSec": 12
+                  }
+                },
+                {
+                  "prompt": "Handle simultaneous emergency and routine traffic.",
+                  "inputType": "audio",
+                  "validationLogic": {
+                    "expectedKeywords": ["priority", "standby", "emergency"],
+                    "minLengthSec": 15
+                  }
+                },
+                {
+                  "prompt": "Coordinate complex approach sequence in degraded radar conditions.",
+                  "inputType": "audio",
+                  "validationLogic": {
+                    "expectedKeywords": [
+                      "sequence",
+                      "spacing",
+                      "report",
+                      "position"
+                    ],
+                    "minLengthSec": 20
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "title": "Paper 3 - Radiotelephony Skills",
+        "moduleType": "oral",
+        "description": "Advanced radiotelephony practice with real-world scenarios.",
+        "units": [
+          {
+            "title": "Radio Communication Basics",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": "Fundamental principles of clear radio communication",
+                "order": 1
+              },
+              {
+                "type": "audio",
+                "content": "https://cdn.example.com/audio/radio-basics.mp3",
+                "order": 2
+              }
+            ],
+            "practice": {
+              "title": "Radio Communication Exercises",
+              "description": "Basic radio communication practice",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "Practice proper radio call sign usage",
+                  "media": null,
+                  "feedback": "Remember to use complete call signs in initial contact."
+                },
+                {
+                  "type": "mcq",
+                  "prompt": "Select the correct readback format",
+                  "options": [
+                    "Partial readback with acknowledgment",
+                    "Complete readback with call sign",
+                    "Acknowledgment only"
+                  ],
+                  "correctAnswer": "Complete readback with call sign",
+                  "feedback": "Always provide complete readback for ATC clearances."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "course_tea_001",
+    "title": "TEA Training",
+    "slug": "tea-training",
+    "description": "Targeted preparation for the Test of English for Aviation, focusing on structure, fluency, and interaction.",
+    "language": "en",
+    "category": "Pilot",
+    "image": {
+      "id": 2,
+      "name": "tea.png",
+      "alternativeText": "TEA Training Course Cover",
+      "caption": "Focused language training for pilots",
+      "width": 1920,
+      "height": 1080,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_tea.png",
+          "hash": "thumbnail_tea_course_cover_456def",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 245,
+          "height": 138,
+          "size": 11.11,
+          "url": "https://cdn.example.com/media/thumbnail_tea_course_cover.jpg"
+        },
+        "medium": {
+          "name": "medium_tea.png",
+          "hash": "medium_tea_course_cover_456def",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 750,
+          "height": 422,
+          "size": 44.22,
+          "url": "https://cdn.example.com/media/medium_tea_course_cover.jpg"
+        },
+        "large": {
+          "name": "large_tea.png",
+          "hash": "large_tea_course_cover_456def",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 1000,
+          "height": 563,
+          "size": 77.33,
+          "url": "https://cdn.example.com/media/large_tea_course_cover.jpg"
         }
-      ]
-    }
-  ]
-}
+      },
+      "hash": "tea_course_cover_456def",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 212.33,
+      "url": "https://cdn.example.com/media/tea_course_cover.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2024-04-20T10:00:00.000Z",
+      "updatedAt": "2024-04-20T10:00:00.000Z"
+    },
+    "introMedia": {
+      "type": "video",
+      "url": "https://cdn.example.com/media/tea-intro.mp4"
+    },
+    "version": "1.0.0",
+    "modules": [
+      {
+        "title": "Part 1 - Listening and Comprehension",
+        "moduleType": "core",
+        "description": "Focus on understanding standard and non-standard aviation English.",
+        "units": [
+          {
+            "title": "Routine Listening Tasks",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": "Develop comprehension of standard phraseology.",
+                "order": 1
+              },
+              {
+                "type": "audio",
+                "content": "https://cdn.example.com/audio/routine-listening-task.mp3",
+                "order": 2
+              }
+            ],
+            "practice": {
+              "title": "Routine MCQs",
+              "description": "Multiple-choice questions based on radio transmissions.",
+              "activities": [
+                {
+                  "type": "mcq",
+                  "prompt": "What is the departure runway?",
+                  "media": {
+                    "url": "https://cdn.example.com/audio/departure-runway.mp3"
+                  },
+                  "options": ["Runway 27", "Runway 18", "Runway 09"],
+                  "correctAnswer": "Runway 27",
+                  "feedback": "Listen for the digits and orientation in the recording."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "title": "Part 2 - Interactive Communication",
+        "moduleType": "oral",
+        "description": "Train to interact with examiners in aviation scenarios.",
+        "units": [
+          {
+            "title": "Unexpected Events",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": "Describe responses to unusual or emergency events",
+                "order": 1
+              },
+              {
+                "type": "video",
+                "content": "https://cdn.example.com/videos/unexpected-event.mp4",
+                "order": 2
+              }
+            ],
+            "practice": {
+              "title": "Spoken Practice - Unusual Situations",
+              "description": "Respond to simulated examiner questions.",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "Your aircraft hits severe icing. Report to ATC.",
+                  "media": null,
+                  "feedback": "Mention type of icing, impact on controls, and request for alternate routing."
+                },
+                {
+                  "type": "audio_input",
+                  "prompt": "Runway lights failed on final approach. Report to tower.",
+                  "media": null,
+                  "feedback": "Explain current position, visibility, and safety concerns."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "title": "Part 3 - Structure and Fluency",
+        "moduleType": "oral",
+        "description": "Refine grammatical accuracy and fluid communication.",
+        "units": [
+          {
+            "title": "Speech Patterns",
+            "contentBlocks": [
+              {
+                "type": "text",
+                "content": "Improve fluency in reporting weather and clearances.",
+                "order": 1
+              },
+              {
+                "type": "audio",
+                "content": "https://cdn.example.com/audio/speech-patterns.mp3",
+                "order": 2
+              }
+            ],
+            "practice": {
+              "title": "Fluency Drills",
+              "description": "Timed speaking tasks to build confidence.",
+              "activities": [
+                {
+                  "type": "audio_input",
+                  "prompt": "Give a weather update for your sector.",
+                  "media": null,
+                  "feedback": "Use full sentences, correct tense, and appropriate vocabulary."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

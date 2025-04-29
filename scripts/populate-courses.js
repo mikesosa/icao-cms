@@ -46,7 +46,10 @@ async function main() {
   try {
     const data = await fs.readFile("mock-course.json", "utf8");
     const courseData = JSON.parse(data);
-    await createCourse(courseData);
+
+    for (const course of courseData) {
+      await createCourse(course);
+    }
   } catch (error) {
     console.error("Error:", JSON.stringify(error, null, 2));
   }
