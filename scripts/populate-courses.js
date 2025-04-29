@@ -44,7 +44,7 @@ async function createCourse(courseData) {
 
 async function main() {
   try {
-    const data = await fs.readFile("response-example.json", "utf8");
+    const data = await fs.readFile("mock-course.json", "utf8");
     const courseData = JSON.parse(data);
     await createCourse(courseData);
   } catch (error) {
