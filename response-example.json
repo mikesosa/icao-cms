@@ -7,14 +7,14 @@
   "category": "ATC",
   "image": {
     "id": 1,
-    "name": "elpac-course-cover.jpg",
+    "name": "elpac.png",
     "alternativeText": "ELPAC Training Course Cover",
     "caption": "Professional ATC training environment",
     "width": 1920,
     "height": 1080,
     "formats": {
       "thumbnail": {
-        "name": "thumbnail_elpac-course-cover.jpg",
+        "name": "thumbnail_elpac.png",
         "hash": "thumbnail_elpac_course_cover_123abc",
         "ext": ".jpg",
         "mime": "image/jpeg",
@@ -24,7 +24,7 @@
         "url": "https://cdn.example.com/media/thumbnail_elpac_course_cover.jpg"
       },
       "medium": {
-        "name": "medium_elpac-course-cover.jpg",
+        "name": "medium_elpac.png",
         "hash": "medium_elpac_course_cover_123abc",
         "ext": ".jpg",
         "mime": "image/jpeg",
@@ -34,7 +34,7 @@
         "url": "https://cdn.example.com/media/medium_elpac_course_cover.jpg"
       },
       "large": {
-        "name": "large_elpac-course-cover.jpg",
+        "name": "large_elpac.png",
         "hash": "large_elpac_course_cover_123abc",
         "ext": ".jpg",
         "mime": "image/jpeg",
@@ -60,28 +60,22 @@
     "url": "https://cdn.example.com/media/elpac-intro.mp4"
   },
   "version": "1.0.0",
-  "isPublished": true,
   "modules": [
     {
-      "id": "module_paper1",
       "title": "Paper 1 - Computer Based Test",
       "moduleType": "core",
       "description": "CBT exam focused on listening and comprehension.",
       "units": [
         {
-          "id": "unit_part1",
           "title": "Part 1 - General Listening",
           "contentBlocks": [
             {
-              "type": "video",
-              "content": {
-                "url": "https://cdn.example.com/videos/elpac_p1_part1.mp4"
-              },
+              "type": "text",
+              "content": "test",
               "order": 1
             }
           ],
           "practice": {
-            "id": "practice_elpac_p1_part1",
             "title": "Practice - Part 1",
             "description": "Practice general listening with MCQs.",
             "activities": [
@@ -103,14 +97,11 @@
           }
         },
         {
-          "id": "unit_part2",
           "title": "Part 2 - Emergency Listening",
           "contentBlocks": [
             {
               "type": "video",
-              "content": {
-                "url": "https://cdn.example.com/videos/elpac_p1_part2.mp4"
-              },
+              "content": "this is a video",
               "order": 1
             }
           ],
@@ -119,25 +110,21 @@
       ]
     },
     {
-      "id": "module_paper2",
       "title": "Paper 2 - Oral Interaction",
       "moduleType": "oral",
       "description": "Oral interview with tasks based on aviation scenarios.",
       "units": [
         {
-          "id": "unit_task1a",
           "title": "Task 1A - Situation Response",
           "contentBlocks": [
             {
               "type": "text",
-              "content": {
-                "html": "<p>In this task, you'll respond to unexpected situations.</p>"
-              },
+              "content": "<p>In this task, you'll respond to unexpected situations.</p>",
+
               "order": 1
             }
           ],
           "practice": {
-            "id": "practice_task1a",
             "title": "Practice - Task 1A",
             "description": "Simulate emergency responses.",
             "activities": [
@@ -151,19 +138,15 @@
           }
         },
         {
-          "id": "unit_task3_simulation",
           "title": "Task 3 - Full Simulation",
           "contentBlocks": [
             {
               "type": "video",
-              "content": {
-                "url": "https://cdn.example.com/videos/elpac_task3_intro.mp4"
-              },
+              "content": "this is a video",
               "order": 1
             }
           ],
           "simulation": {
-            "id": "sim_elpac_task3",
             "title": "ELPAC Final Simulation",
             "description": "Complete oral simulation under timed conditions.",
             "videoIntro": "https://cdn.example.com/videos/elpac_sim_intro.mp4",
