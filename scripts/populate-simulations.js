@@ -22,8 +22,6 @@ const api = axios.create({
 
 async function createSimulation(simulationData) {
   try {
-    console.log("Sending payload:", JSON.stringify(simulationData, null, 2));
-
     const response = await api.post("/api/simulations", simulationData);
     console.log("Simulation created successfully:", response.data.data.id);
     return response.data.data.id;

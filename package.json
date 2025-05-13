@@ -15,7 +15,8 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
     "populate-courses": "node scripts/populate-courses.js",
     "populate-practice-sets": "node scripts/populate-practice-sets.js",
-    "populate-simulations": "node scripts/populate-simulations.js"
+    "populate-simulations": "node scripts/populate-simulations.js",
+    "populate-database": "node scripts/populate-database.js"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.12.4",

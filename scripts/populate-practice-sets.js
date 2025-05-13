@@ -26,8 +26,6 @@ async function createPracticeSet(practiceSetData) {
       data: practiceSetData,
     };
 
-    console.log("Sending payload:", JSON.stringify(payload, null, 2));
-
     const response = await api.post("/api/practice-sets", payload);
     console.log("Practice Set created successfully:", response.data.data.id);
     return response.data.data.id;

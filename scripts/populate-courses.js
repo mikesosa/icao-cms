@@ -35,8 +35,6 @@ async function createCourse(courseData) {
       },
     };
 
-    console.log("Sending payload:", JSON.stringify(payload, null, 2));
-
     const response = await api.post("/api/courses", payload);
     console.log("Course created successfully:", response.data.data.id);
     return response.data.data.id;
