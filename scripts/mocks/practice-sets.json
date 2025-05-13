@@ -1,0 +1,79 @@
+{
+  "mcqPracticeSet": {
+    "title": "Basic Communication Practice",
+    "description": "Test your understanding of basic aviation communication with multiple choice questions",
+    "activities": [
+      {
+        "type": "mcq",
+        "prompt": "What is the correct phraseology for requesting landing clearance?",
+        "options": {
+          "choices": [
+            "Request landing",
+            "Request landing clearance",
+            "Request landing permission",
+            "Request landing authorization"
+          ]
+        },
+        "correctAnswer": {
+          "index": 1
+        },
+        "feedback": "The correct phraseology is 'Request landing clearance'. This is the standard ICAO phraseology for requesting permission to land."
+      },
+      {
+        "type": "mcq",
+        "prompt": "Which frequency should you use for initial contact with ATC?",
+        "options": {
+          "choices": ["121.5 MHz", "118.0 MHz", "123.45 MHz", "126.7 MHz"]
+        },
+        "correctAnswer": {
+          "index": 1
+        },
+        "feedback": "118.0 MHz is the standard frequency for initial contact with ATC in most regions."
+      }
+    ]
+  },
+  "audioPracticeSet": {
+    "title": "Pronunciation Practice",
+    "description": "Practice your pronunciation of aviation terminology",
+    "activities": [
+      {
+        "type": "audio_input",
+        "prompt": "Record yourself saying the following phrase: 'Request taxi clearance'",
+        "correctAnswer": {
+          "text": "Request taxi clearance"
+        },
+        "feedback": "Make sure to pronounce each word clearly and maintain a steady pace."
+      },
+      {
+        "type": "audio_input",
+        "prompt": "Record yourself saying the following phrase: 'Maintaining flight level three five zero'",
+        "correctAnswer": {
+          "text": "Maintaining flight level three five zero"
+        },
+        "feedback": "Remember to use the word 'three' instead of 'thirty' when saying flight levels."
+      }
+    ]
+  },
+  "textPracticeSet": {
+    "title": "Phraseology Practice",
+    "description": "Practice writing correct aviation phraseology",
+    "activities": [
+      {
+        "type": "text_input",
+        "prompt": "Write the correct phrase for requesting a weather report:",
+        "correctAnswer": {
+          "text": "Request weather information"
+        },
+        "feedback": "The standard phrase is 'Request weather information'. This is the correct ICAO phraseology."
+      },
+      {
+        "type": "text_input",
+        "prompt": "Write the correct phrase for reporting your position:",
+        "correctAnswer": {
+          "text": "Position report"
+        },
+        "feedback": "The standard phrase is 'Position report'. This is the correct ICAO phraseology."
+      }
+    ]
+  }
+}

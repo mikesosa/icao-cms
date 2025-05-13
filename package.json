@@ -13,7 +13,8 @@
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
-    "populate-courses": "node scripts/populate-courses.js"
+    "populate-courses": "node scripts/populate-courses.js",
+    "populate-practice-sets": "node scripts/populate-practice-sets.js"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.12.4",
