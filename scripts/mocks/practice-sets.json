@@ -1,78 +1,108 @@
 {
-  "mcqPracticeSet": {
-    "title": "Basic Communication Practice",
-    "description": "Test your understanding of basic aviation communication with multiple choice questions",
+  "elpacPracticeSet": {
+    "title": "ELPAC Training - Listening Comprehension",
+    "description": "Practice your understanding of ATC communications for the ELPAC exam",
     "activities": [
       {
         "type": "mcq",
-        "prompt": "What is the correct phraseology for requesting landing clearance?",
+        "prompt": "What is the assigned heading in the ATC instruction?",
         "options": {
           "choices": [
-            "Request landing",
-            "Request landing clearance",
-            "Request landing permission",
-            "Request landing authorization"
+            "Heading 270",
+            "Heading 090",
+            "Heading 180",
+            "Heading 360"
           ]
         },
         "correctAnswer": {
-          "index": 1
+          "index": 0
         },
-        "feedback": "The correct phraseology is 'Request landing clearance'. This is the standard ICAO phraseology for requesting permission to land."
+        "feedback": "The correct heading is 270 degrees. This is a standard heading assignment in ATC communications."
       },
       {
         "type": "mcq",
-        "prompt": "Which frequency should you use for initial contact with ATC?",
+        "prompt": "What is the clearance limit given by ATC?",
         "options": {
-          "choices": ["121.5 MHz", "118.0 MHz", "123.45 MHz", "126.7 MHz"]
+          "choices": ["FL350", "FL250", "FL150", "FL450"]
         },
         "correctAnswer": {
-          "index": 1
+          "index": 0
         },
-        "feedback": "118.0 MHz is the standard frequency for initial contact with ATC in most regions."
+        "feedback": "The clearance limit is FL350. Remember to listen carefully for flight level numbers in ATC communications."
       }
     ]
   },
-  "audioPracticeSet": {
-    "title": "Pronunciation Practice",
-    "description": "Practice your pronunciation of aviation terminology",
+  "teaPracticeSet": {
+    "title": "TEA Training - Structure and Vocabulary",
+    "description": "Practice your English language skills for aviation communication",
     "activities": [
       {
-        "type": "audio_input",
-        "prompt": "Record yourself saying the following phrase: 'Request taxi clearance'",
-        "correctAnswer": {
-          "text": "Request taxi clearance"
+        "type": "mcq",
+        "prompt": "Select the correct term for the weather condition:",
+        "options": {
+          "choices": [
+            "Severe turbulence",
+            "Strong turbulence",
+            "Heavy turbulence",
+            "Rough turbulence"
+          ]
         },
-        "feedback": "Make sure to pronounce each word clearly and maintain a steady pace."
+        "correctAnswer": {
+          "index": 0
+        },
+        "feedback": "The correct term is 'Severe turbulence'. This is the standard aviation terminology for describing significant turbulence."
       },
       {
-        "type": "audio_input",
-        "prompt": "Record yourself saying the following phrase: 'Maintaining flight level three five zero'",
+        "type": "text_input",
+        "prompt": "Complete the sentence with the correct aviation term: 'The aircraft is experiencing _____ due to the weather conditions.'",
         "correctAnswer": {
-          "text": "Maintaining flight level three five zero"
+          "text": "severe turbulence"
         },
-        "feedback": "Remember to use the word 'three' instead of 'thirty' when saying flight levels."
+        "feedback": "The correct term is 'severe turbulence'. This is the standard way to describe significant turbulence in aviation communications."
       }
     ]
   },
-  "textPracticeSet": {
-    "title": "Phraseology Practice",
-    "description": "Practice writing correct aviation phraseology",
+  "elpacSpeakingSet": {
+    "title": "ELPAC Training - Speaking Skills",
+    "description": "Practice your speaking skills for ATC communications",
     "activities": [
       {
-        "type": "text_input",
-        "prompt": "Write the correct phrase for requesting a weather report:",
+        "type": "audio_input",
+        "prompt": "Record yourself issuing a departure clearance",
         "correctAnswer": {
-          "text": "Request weather information"
+          "text": "Cleared for takeoff, runway 27, wind 270 at 10 knots, temperature 20, QNH 1013"
         },
-        "feedback": "The standard phrase is 'Request weather information'. This is the correct ICAO phraseology."
+        "feedback": "Make sure to include all necessary elements: clearance, runway, wind, temperature, and QNH."
       },
       {
-        "type": "text_input",
-        "prompt": "Write the correct phrase for reporting your position:",
+        "type": "audio_input",
+        "prompt": "Record yourself handling an aircraft reporting engine failure",
         "correctAnswer": {
-          "text": "Position report"
+          "text": "Roger, understand you have an engine failure. What is your current position and altitude? Do you require immediate assistance?"
         },
-        "feedback": "The standard phrase is 'Position report'. This is the correct ICAO phraseology."
+        "feedback": "Remember to acknowledge the emergency, gather essential information, and offer assistance."
+      }
+    ]
+  },
+  "teaSpeakingSet": {
+    "title": "TEA Training - Interactive Communication",
+    "description": "Practice your interactive communication skills in aviation contexts",
+    "activities": [
+      {
+        "type": "audio_input",
+        "prompt": "Request a weather update for your destination",
+        "correctAnswer": {
+          "text": "Request weather information for destination airport. Need current conditions and forecast for next two hours."
+        },
+        "feedback": "Use clear and concise language, specify what information you need, and include a time frame."
+      },
+      {
+        "type": "audio_input",
+        "prompt": "Report a technical problem to maintenance",
+        "correctAnswer": {
+          "text": "We have a technical issue with the number two engine. Oil pressure is fluctuating and temperature is rising. Request maintenance assistance."
+        },
+        "feedback": "Describe the problem clearly, provide specific details about the symptoms, and request appropriate assistance."
       }
     ]
   }

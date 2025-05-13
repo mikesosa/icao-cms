@@ -40,21 +40,18 @@ async function createPracticeSet(practiceSetData) {
 
 async function main() {
   try {
-    // Create MCQ Practice Set
-    const mcqSetId = await createPracticeSet(practiceSetsData.mcqPracticeSet);
-    console.log("Created MCQ Practice Set:", mcqSetId);
+    // Create all practice sets from the JSON file
+    const practiceSetIds = {};
 
-    // Create Audio Practice Set
-    const audioSetId = await createPracticeSet(
-      practiceSetsData.audioPracticeSet,
-    );
-    console.log("Created Audio Practice Set:", audioSetId);
-
-    // Create Text Practice Set
-    const textSetId = await createPracticeSet(practiceSetsData.textPracticeSet);
-    console.log("Created Text Practice Set:", textSetId);
+    // Create each practice set and store its ID
+    for (const [key, practiceSet] of Object.entries(practiceSetsData)) {
+      const setId = await createPracticeSet(practiceSet);
+      practiceSetIds[key] = setId;
+      console.log(`Created ${key}:`, setId);
+    }
 
     console.log("Successfully created all practice sets!");
+    console.log("Practice Set IDs:", practiceSetIds);
   } catch (error) {
     console.error("Error:", JSON.stringify(error, null, 2));
   }

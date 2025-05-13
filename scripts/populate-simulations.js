@@ -36,22 +36,18 @@ async function createSimulation(simulationData) {
 
 async function main() {
   try {
-    // Create ATC Simulation
-    const atcSimulationId = await createSimulation(
-      simulationsData.atcSimulation,
-    );
-    console.log("Created ATC Simulation:", atcSimulationId);
+    // Create all simulations from the JSON file
+    const simulationIds = {};
 
-    // Create Emergency Response Simulation
-    const emergencySimulationId = await createSimulation(
-      simulationsData.emergencySimulation,
-    );
-    console.log(
-      "Created Emergency Response Simulation:",
-      emergencySimulationId,
-    );
+    // Create each simulation and store its ID
+    for (const [key, simulation] of Object.entries(simulationsData)) {
+      const setId = await createSimulation(simulation);
+      simulationIds[key] = setId;
+      console.log(`Created ${key}:`, setId);
+    }
 
     console.log("Successfully created all simulations!");
+    console.log("Simulation IDs:", simulationIds);
   } catch (error) {
     console.error("Error:", JSON.stringify(error, null, 2));
   }

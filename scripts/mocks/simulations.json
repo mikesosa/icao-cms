@@ -1,8 +1,8 @@
 {
-  "atcSimulation": {
+  "elpacAtcSimulation": {
     "data": {
-      "title": "Air Traffic Control Simulation",
-      "description": "An interactive simulation of air traffic control procedures and communication",
+      "title": "ELPAC Training - ATC Communication Simulation",
+      "description": "Practice standard ATC phraseology and procedures for the ELPAC exam",
       "videoIntro": null,
       "steps": [
         {
@@ -29,14 +29,14 @@
           "validationLogic": {
             "choices": [
               {
-                "text": "Cleared for takeoff runway 27L",
+                "text": "Cleared for takeoff runway 27L, wind 270 at 10 knots, temperature 20, QNH 1013",
                 "isCorrect": true,
-                "feedback": "Correct! Clear and concise clearance given."
+                "feedback": "Correct! Clear and concise clearance given with all necessary information."
               },
               {
                 "text": "You can go now",
                 "isCorrect": false,
-                "feedback": "Incorrect. Must use proper clearance phraseology."
+                "feedback": "Incorrect. Must use proper clearance phraseology including all required elements."
               }
             ]
           }
@@ -44,10 +44,10 @@
       ]
     }
   },
-  "emergencySimulation": {
+  "elpacEmergencySimulation": {
     "data": {
-      "title": "Emergency Response Simulation",
-      "description": "Practice handling emergency situations in aviation",
+      "title": "ELPAC Training - Emergency Response Simulation",
+      "description": "Practice handling emergency situations in ATC communications",
       "videoIntro": null,
       "steps": [
         {
@@ -82,6 +82,96 @@
                 "text": "Land on any runway you want",
                 "isCorrect": false,
                 "feedback": "Incorrect. Must specify runway and coordinate with emergency services."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "teaRoutineSimulation": {
+    "data": {
+      "title": "TEA Training - Routine Communication Simulation",
+      "description": "Practice routine aviation communication scenarios",
+      "videoIntro": null,
+      "steps": [
+        {
+          "prompt": "Request weather information. Choose the correct phraseology:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "Request weather information for destination airport",
+                "isCorrect": true,
+                "feedback": "Correct! Clear and professional request for weather information."
+              },
+              {
+                "text": "What's the weather like?",
+                "isCorrect": false,
+                "feedback": "Incorrect. Use proper aviation terminology."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": "Report your position. Select the correct phraseology:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "Position report: 50 miles north of ICAO, FL350, estimating next waypoint in 15 minutes",
+                "isCorrect": true,
+                "feedback": "Correct! Complete position report with all required elements."
+              },
+              {
+                "text": "We're somewhere north of here",
+                "isCorrect": false,
+                "feedback": "Incorrect. Must provide specific position details."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "teaNonRoutineSimulation": {
+    "data": {
+      "title": "TEA Training - Non-Routine Communication Simulation",
+      "description": "Practice handling non-routine situations in aviation",
+      "videoIntro": null,
+      "steps": [
+        {
+          "prompt": "Report a technical problem. Choose the correct phraseology:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "We have a technical issue with the number two engine. Oil pressure is fluctuating and temperature is rising",
+                "isCorrect": true,
+                "feedback": "Correct! Clear description of the problem with specific details."
+              },
+              {
+                "text": "Something's wrong with the engine",
+                "isCorrect": false,
+                "feedback": "Incorrect. Must provide specific details about the problem."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": "Request maintenance assistance. Select the correct phraseology:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "Request maintenance assistance at destination. Need technical inspection of number two engine",
+                "isCorrect": true,
+                "feedback": "Correct! Clear request with specific requirements."
+              },
+              {
+                "text": "We need a mechanic",
+                "isCorrect": false,
+                "feedback": "Incorrect. Must specify the type of assistance needed."
               }
             ]
           }
