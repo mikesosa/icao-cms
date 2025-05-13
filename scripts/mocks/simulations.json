@@ -1,0 +1,92 @@
+{
+  "atcSimulation": {
+    "data": {
+      "title": "Air Traffic Control Simulation",
+      "description": "An interactive simulation of air traffic control procedures and communication",
+      "videoIntro": null,
+      "steps": [
+        {
+          "prompt": "Establish initial contact with the aircraft. Choose the correct radio phraseology:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "Welcome to ICAO Tower, what is your position?",
+                "isCorrect": true,
+                "feedback": "Correct! This is the standard way to initiate contact."
+              },
+              {
+                "text": "Hello aircraft, what do you want?",
+                "isCorrect": false,
+                "feedback": "Incorrect. Always use proper radio phraseology."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": "Provide departure clearance to the aircraft. Select the correct phraseology:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "Cleared for takeoff runway 27L",
+                "isCorrect": true,
+                "feedback": "Correct! Clear and concise clearance given."
+              },
+              {
+                "text": "You can go now",
+                "isCorrect": false,
+                "feedback": "Incorrect. Must use proper clearance phraseology."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "emergencySimulation": {
+    "data": {
+      "title": "Emergency Response Simulation",
+      "description": "Practice handling emergency situations in aviation",
+      "videoIntro": null,
+      "steps": [
+        {
+          "prompt": "An aircraft has declared an emergency. Choose the correct response:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "Roger, state nature of emergency",
+                "isCorrect": true,
+                "feedback": "Correct! Always ask for the nature of emergency first."
+              },
+              {
+                "text": "What's wrong with your aircraft?",
+                "isCorrect": false,
+                "feedback": "Incorrect. Use standard emergency phraseology."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": "Coordinate emergency landing procedures. Select the correct phraseology:",
+          "inputType": "mcq",
+          "validationLogic": {
+            "choices": [
+              {
+                "text": "Cleared emergency landing runway 27L, emergency services standing by",
+                "isCorrect": true,
+                "feedback": "Correct! Proper coordination with emergency services."
+              },
+              {
+                "text": "Land on any runway you want",
+                "isCorrect": false,
+                "feedback": "Incorrect. Must specify runway and coordinate with emergency services."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
