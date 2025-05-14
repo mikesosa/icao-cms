@@ -42,6 +42,10 @@ export interface ModuleModule extends Struct.ComponentSchema {
     description: Schema.Attribute.RichText;
     moduleType: Schema.Attribute.Enumeration<["core", "oral", "sim"]> &
       Schema.Attribute.Required;
+    simulation: Schema.Attribute.Relation<
+      "oneToOne",
+      "api::simulation.simulation"
+    >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     units: Schema.Attribute.Component<"unit.unit", true>;
   };

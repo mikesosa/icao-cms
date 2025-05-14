@@ -26,6 +26,11 @@
       "type": "component",
       "repeatable": true,
       "component": "unit.unit"
+    },
+    "simulation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::simulation.simulation"
     }
   }
-} 
+}
